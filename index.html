@@ -36,6 +36,11 @@
     .vis-container{
       width: 100%;
     }
+    
+    .description-top{
+      margin-top:25px;
+    }
+    
     .description h2, h1{
       margin-top:0px;
     }
@@ -77,7 +82,7 @@
        <hr>
    </div>
 
-    <div class="pure-g">
+    <div class="pure-g; description-top;">
         <div class="pure-u-2-3">
           <div id="bar_plot"  class="vis-container"></div>
         </div>
@@ -137,13 +142,13 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis3 = "annonated_area.json";
+  var vis3 = "450_area.json";
   
   vegaEmbed('#area_plot', vis3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis4 = "pie_chart.json";
+  var vis4 = "450_pie.json";
   
   vegaEmbed('#pie_chart', vis4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
