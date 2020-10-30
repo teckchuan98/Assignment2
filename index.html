@@ -28,17 +28,11 @@
        width: 850px;    
        background-image : url("minMap.JPG");
        background-size : cover;
-/*        background-color: white;    */
        margin: auto;
        padding: 50px;
        padding-top: 35px;
     }
-    
-    .pic{
-      background-image : url("backgroundMap.png");
-      background-size : cover;
-    }
-    
+
     .vis-container{
       width: 100%;
     }
@@ -127,7 +121,7 @@
           
 <script type="text/javascript">
   
-  var vis1 = "asia_holiday_map.jsonn";
+  var vis1 = "asia_holiday_map.json";
   
   vegaEmbed('#choropleth_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
